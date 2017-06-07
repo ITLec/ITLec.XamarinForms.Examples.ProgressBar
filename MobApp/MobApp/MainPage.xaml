@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MobApp"
+             
+             xmlns:toolkit= "clr-namespace:MobApp;assembly=MobApp"
+             x:Class="MobApp.MainPage">
+
+    <ScrollView>
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label Text="ITLec - Advanced Custom ProgressBar - Xamarin.Forms" 
+           VerticalOptions="Center" 
+           HorizontalOptions="Center" />
+
+
+            <toolkit:CustomProgressBar x:Name="customProgressBar">
+            </toolkit:CustomProgressBar>
+
+
+            <Button  x:Name="btnSubmit" Text="Click To Run Progress Bar" 
+                     Clicked="btnSubmit_Clicked" />
+
+            <Button Text="Invoke Alert"                 FontSize="Large"                 HorizontalOptions="Center"                 VerticalOptions="CenterAndExpand"                 Clicked="OnButtonClicked" />
+
+            <Label x:Name="label"                Text="Tap button to invoke alert"                FontSize="Large"                HorizontalTextAlignment="Center"                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
